@@ -11,4 +11,26 @@ export abstract class UnidadCombate {
     this.arma = arma;
     this.escudo = new Escudo(0);
   }
+  disparar(objetivo: UnidadCombate): void {
+    const danio = this.arma.disparar();
+    objetivo.recibirDisparo(danio);
+  }
+
+  recibirDisparo(danio: number): void {
+    const danioFinal = this.escudo.reducirDanio(danio);
+
+    this.vida = Math.max(0, this.vida - danioFinal);
+  }
+
+  estaVivo(): boolean {
+    return this.vida > 0;
+  }
+
+  equiparEscudo(escudo: Escudo): void {
+    this.escudo = escudo;
+  }
+
+  getVida(): number {
+    return this.vida;
+  }
 }
