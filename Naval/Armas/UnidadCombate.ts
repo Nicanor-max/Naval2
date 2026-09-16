@@ -1,4 +1,4 @@
-import type { Arma } from "./Armas.js";
+import type { Arma } from "./Interface/Armas.js";
 import { Escudo } from "../Escudo/Escudo.js";
 
 export class UnidadCombate {

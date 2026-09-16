@@ -1,4 +1,4 @@
-import type { Arma } from "./Armas.js";
+import type { Arma } from "./Interface/Armas.js";
 
 export class Pistola implements Arma {
   private municiones: number;
