@@ -32,3 +32,32 @@ describe("Pistola", () => {
 
 });
 
+describe("Ametralladora", () => {
+
+  test("debe comenzar con las municiones indicadas", () => {
+    const ametralladora = new Ametralladora(5);
+
+    expect(ametralladora.getMuniciones()).toBe(5);
+  });
+
+  test("debe descontar una municion al disparar", () => {
+    const ametralladora = new Ametralladora(5);
+
+    ametralladora.disparar();
+
+    expect(ametralladora.getMuniciones()).toBe(4);
+  });
+
+  test("debe hacer 2 de daño", () => {
+    const ametralladora = new Ametralladora(5);
+
+    expect(ametralladora.disparar()).toBe(2);
+  });
+
+  test("sin municiones no debe hacer daño", () => {
+    const ametralladora = new Ametralladora(0);
+
+    expect(ametralladora.disparar()).toBe(0);
+  });
+
+});
