@@ -1,7 +1,7 @@
 import type { Arma } from "./Armas.js";
 import { Escudo } from "../Escudo/Escudo.js";
 
-export abstract class UnidadCombate {
+export class UnidadCombate {
   protected vida: number;
   private arma: Arma;
   private escudo: Escudo;
