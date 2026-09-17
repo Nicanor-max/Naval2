@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest";
-import { Escudo } from "../Naval/Escudo/Escudo.js";
+import { Escudo } from "../Naval/Escudo/Escudo.ts";
 
 describe("Escudo", () => {
 

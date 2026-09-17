@@ -1,5 +1,5 @@
-import type { Arma } from "./Interface/Armas.js";
-import { Escudo } from "../Escudo/Escudo.js";
+import type { Arma } from "./Interface/Armas.ts";
+import { Escudo } from "../Escudo/Escudo.ts";
 
 export class UnidadCombate {
   protected vida: number;

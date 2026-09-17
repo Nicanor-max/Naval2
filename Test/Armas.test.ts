@@ -1,6 +1,6 @@
 import { describe, expect, test } from "vitest";
-import { Pistola } from "../Naval/Armas/Pistola.js";
-import { Ametralladora } from "../Naval/Armas/Ametralladora.js";
+import { Pistola } from "../Naval/Armas/Pistola.ts";
+import { Ametralladora } from "../Naval/Armas/Ametralladora.ts";
 
 describe("Pistola", () => {
 

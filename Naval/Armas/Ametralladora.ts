@@ -1,4 +1,4 @@
-import type { Arma } from "./Interface/Armas.js";
+import type { Arma } from "./Interface/Armas.ts";
 
 export class Ametralladora implements Arma {
   private municiones: number;

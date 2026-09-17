@@ -2,12 +2,12 @@
   "name": "guerranaval",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-  "test": "vitest",
-  "test:run": "vitest run",
-  "test:coverage": "vitest run --coverage"
-},
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Nicanor-max/GuerraNaval.git"
@@ -24,5 +24,8 @@
     "@types/node": "^26.6.0",
     "typescript": "^7.0.2",
     "vitest": "^5.0.1"
+  },
+  "allowScripts": {
+    "fsevents@2.3.3": true
   }
 }

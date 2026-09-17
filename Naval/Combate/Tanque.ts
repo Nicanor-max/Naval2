@@ -1,5 +1,5 @@
-import type { Arma } from "../Armas/Interface/Armas.js";
-import { UnidadCombate } from "../Armas/UnidadCombate.js";
+import type { Arma } from "../Armas/Interface/Armas.ts";
+import { UnidadCombate } from "../Armas/UnidadCombate.ts";
 
 export class Tanque extends UnidadCombate {
     constructor(arma: Arma) {
